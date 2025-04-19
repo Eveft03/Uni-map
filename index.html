@@ -3,23 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Uni map</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- Leaflet CSS and JS -->
+        <title>UNIMAP Interactive Map</title>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-
-        <!-- Leaflet plugins for GeoTIFF support -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/georaster/1.5.4/georaster.browser.bundle.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/georaster-layer-for-leaflet/1.0.3/georaster-layer-for-leaflet.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="map"></div>
+        
+        <!-- Βασικές βιβλιοθήκες -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+        
+        <!-- Βιβλιοθήκη GeoTIFF.js -->
+        <script src="https://cdn.jsdelivr.net/npm/geotiff"></script>
+        
+        <!-- Κύριο script -->
+        <script src="script.js"></script>
     </body>
-
-    <script src="script.js" defer></script>
 </html>
